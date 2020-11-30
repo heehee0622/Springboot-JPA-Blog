@@ -14,7 +14,8 @@ spring:
     url: jdbc:mysql://localhost:3306/blog?serverTimezone=Asia/Seoul
     username: cos
     password: cos1234
-    
+
+  
   jpa:
     open-in-view: true
     hibernate:
@@ -38,6 +39,9 @@ spring:
 logging:
   level:
     org:
-     hibernate:
-     descriptor:
+     hibernate: debug
+     descriptor: debug
      sql: trace
+     
+cos:
+  key: cos1234
